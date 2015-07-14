@@ -1,7 +1,7 @@
 'use strict';
 
 angular
-  .module('pokeApp', [
+  .module('myApp', [
     'ngAnimate',
     'ngCookies',
     'ngResource',
@@ -16,9 +16,9 @@ angular
         controller: 'MainCtrl',
         controllerAs: 'main'
       })
-      .when('/poke', {
+      .when('/about', {
         templateUrl: 'views/about.html',
-        controller: 'PokeCtrl',
+        controller: 'AboutCtrl',
         controllerAs: 'about'
       })
       .otherwise({
